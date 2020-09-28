@@ -1,3 +1,3 @@
-# Primer Día
+# Día 1
 
 XD
