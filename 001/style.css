@@ -1,0 +1,217 @@
+/* 
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #43389F;
+  background: -webkit-linear-gradient(bottom left, #43389F 0%, #4ec6ca 100%);
+  background: linear-gradient(to top right, #43389F 0%, #4ec6ca 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43389F', endColorstr='#4ec6ca',GradientType=1 );
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+
+.center {
+    position: absolute;
+    top: 50.8%;
+    left: 50.5%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.number {
+    position: relative;
+    height: 100px;
+    width: 200px;
+}
+.number .one-one {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -16px;
+    height: 40px;
+    width: 20px;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+.number .one-two {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0px;
+    height: 100px;
+    width: 24px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+.number .zero-one,
+.number .zero-two {
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    left: 17px;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 24px solid #fff;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+.number .zero-two {
+    z-index: 6;
+    left: 100px;
+}
+
+.big {
+    position: relative;
+    z-index: 20;
+    display: block;
+    text-align: center;
+    font-size: 81px;
+    line-height: 65px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: -8px;
+}
+
+.small {
+    position: relative;
+    z-index: 20;
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-left: -4px;
+} */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+    font-family: "Open Sans";
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.frame {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+    background: #43389F;
+    padding: 30px 15px;
+    background: -webkit-linear-gradient(bottom left, #43389F 0%, #4ec6ca 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43389F', endColorstr='#4ec6ca',GradientType=1 );
+}
+
+.figure {
+    height: -webkit-fill-available;
+    height: -moz-fill-available;
+}
+
+.number {
+    padding: 22px 0;
+    position: relative;
+    width: 100%;
+    left: 13%;
+    height: 30%;
+}
+
+.one-one {
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 16px;
+    height: 40px;
+    width: 30px;
+    border-radius: 3px;
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+.one-two {
+    height: 120px;
+    width: 30px;
+    position: absolute;
+    background-color: #fff;
+    left: 35px;
+    top: -3px;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    border-radius: 4px;
+}
+
+.zero-one {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    background-color: transparent;
+    left: 50px;
+    top: -3px;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 50%;
+    border: 30px solid #fff;
+}
+
+.zero-two {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    background-color: transparent;
+    left: 150px;
+    top: -3px;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+    z-index: 0;
+    border-radius: 50%;
+    border: 30px solid #fff;
+}
+
+.big, .small {
+     color: #fff;
+     top: 20px;
+}
+
+.big {
+    position: relative;
+    z-index: 20;
+    display: block;
+    text-align: center;
+    font-size: 81px;
+    line-height: 65px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: -8px;
+}
+
+.small {
+    position: relative;
+    z-index: 20;
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-left: -4px;
+}
