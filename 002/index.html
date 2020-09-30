@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reto Día 2</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <div class="frame">
+            <div class="center" id="menu">
+                <div class="line-1 no-animation"></div>
+                <div class="line-2 no-animation"></div>
+                <div class="line-3 no-animation"></div>
+            </div>
+        </div>
+        <script>
+            'use strict'
+            const $menu = document.getElementById("menu");
+            $menu.addEventListener('click', function () {
+                Array.prototype.forEach.call(this.children, (element) => {
+                    element.classList.remove('no-animation')
+                    element.classList.toggle('active')
+                })
+            })
+        </script>
+    </body>
+</html>

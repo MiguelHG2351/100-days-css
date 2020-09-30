@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header class="header-site">
+        <div class="sidenav" id="sidenav">
+            <div class="profile">
+                <div class="background">
+                    <img class="responsive-img" src="background.jpeg" alt="Fondo del perfil">
+                </div>
+                <div class="avatar">
+                    <img class="responsive-img" src="minecraft.jpg" alt="avatar del usuario">
+                </div>
+                <div class="info">
+                    <span>
+                        <p>miguelhernandezgaitan13@gmail.com</p>
+                        <p>Miguel Angel Hernández Gaitan</p>
+                    </span>
+                    </div>
+            </div>
+            <ul class="menu">
+                <li class="list-menu">
+                    <i class="material-icons">home</i>
+                    Inicio
+                </li>
+                <li class="list-menu">
+                    <i class="material-icons">shopping_cart</i>
+                    Catalogo
+                </li>
+                <li class="list-menu">
+                    <i class="material-icons">info</i>
+                    About us
+                </li>
+                <li class="list-menu">
+                    <i class="material-icons">contact_phone</i>
+                    Contact
+                </li>
+                <li class="list-menu">
+                    <i class="material-icons">book</i>
+                    Blog
+                </li>
+            </ul>
+        </div>
+        <bottom class="toggle-menu" id="toggle-menu">
+            <div class="frame">
+                <div class="center" id="menu">
+                    <div class="line-1 no-animation"></div>
+                    <div class="line-2 no-animation"></div>
+                    <div class="line-3 no-animation"></div>
+                </div>
+            </div>
+        </bottom>
+    </header>
+    <div id="among-us">
+        <img width="85px" src="impostor.png"Rojo">
+        <img width="55px" src="Cyan.png" alt="Celeste">
+        <!-- <img width="45px" src="cyankilled.png" alt="Celeste"> -->
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <audio src="among_us.mp3" id="audio"></audio>
+    <script>
+        'use strict'
+        const btn = document.getElementById('toggle-menu')
+        const overlay = document.getElementById('overlay')
+        const sidenav = document.getElementById('sidenav')
+        const $menu = document.getElementById("menu");
+        const audio = document.getElementById('audio')
+        const among_us = document.getElementById('among-us')
+
+        btn.addEventListener('click', () => {
+            overlay.classList.toggle('active')
+            sidenav.classList.toggle('active')
+            among_us.children[0].src = ""
+            among_us.children[1].src = "cyankilled.png"
+            audio.play()
+        })
+        overlay.addEventListener('click', () => {
+            overlay.classList.remove('active')
+            sidenav.classList.remove('active')
+            Array.prototype.forEach.call(menu.children, (element) => {
+                element.classList.remove('no-animation')
+                element.classList.toggle('active')
+            })
+        })
+
+        $menu.addEventListener('click', function () {
+                Array.prototype.forEach.call(this.children, (element) => {
+                    element.classList.remove('no-animation')
+                    element.classList.toggle('active')
+                })
+        })
+    </script>
+</body>
+</html>
