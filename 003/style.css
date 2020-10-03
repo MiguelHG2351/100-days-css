@@ -36,7 +36,6 @@ body {
     top: 8%;
     border-radius: 50%;
     background-color: #ffef00;
-    /* transform-origin: 550% 768%; */
     transform-origin: 10% 608%;
     transform: rotate(-25deg);
     animation: sun-animation 3s cubic-bezier(1, 0.20, 0.60, 0.4) forwards infinite;
@@ -53,24 +52,23 @@ body {
 
 .pyramid-left {
     position: absolute;
-    left: 15%;
-    /* clip-path: polygon(0 49%, 0% 100%, 100% 100%); */
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    left: 15.48%;
+    clip-path: polygon(74% 5%, 0 100%, 100% 100%);
     height: 125px;
-    width: 150px;
+    width: 188px;
     top: 30%;
     animation: pyramid-left-animation infinite 3s cubic-bezier(1, 0.20, 0.60, 0.4);
     background: #fff;
 }
 .pyramid-right {
     position: absolute;
-    left: 51%;
-    /* clip-path: polygon(0 49%, 0% 100%, 100% 100%); */
-    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    left: 49%;
+    clip-path: polygon(-2% 3%, 33% 100%, 100% 100%);
+    ;
     height: 125px;
     width: 150px;
     top: 30%;
-    background-color: rgb(255, 255,255);
+    background-color: #fff;
     animation: pyramid-right-animation infinite 3s cubic-bezier(1, 0.20, 0.60, 0.4);
     z-index: 2;
 }
@@ -78,13 +76,12 @@ body {
 .shadow {
     position: absolute;
     left: 15%;
-    /* clip-path: polygon(0 49%, 0% 100%, 100% 100%); */
     clip-path: polygon(100% 40%, 1% 100%, 84% 99%);
-    height: 125px;
+    height: 120px;
     width: 100%;
     top: 60%;
-    background-color: rgba(0, 0, 0, 0.70);
-    animation: shadow-animation infinite 3s cubic-bezier(1, 0.20, 0.60, 0.4);
+    background-color: rgba(51, 51, 51, 0.582);
+    animation: shadow-animation infinite 3s cubic-bezier(0.4, 0, 0.49, 1);
     z-index: 6;
 
 }
@@ -101,7 +98,6 @@ body {
      
     30% {
         opacity: 1;
-        /* opacity: 0.9; */
     }
 
     50% {
@@ -109,7 +105,7 @@ body {
         opacity: 0.94;
     }
     
-    75% {
+    88% {
         opacity: 0.85;
     }
     
@@ -124,9 +120,11 @@ body {
     0% {
         transform: rotate(-60deg);
     }
-    25% {
+
+    30% {
         transform: rotate(-15deg);
     }
+    
     100% {
         transform: rotate(60deg);
     }
@@ -134,25 +132,24 @@ body {
 
 @keyframes pyramid-right-animation {
     0% {
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: #eee
     }
 
     25% {
-        /* background-color: rgba(255, 255, 255, 0.75); */
-        background-color: #1010;
+        background-color: #ddd;
     }
     
     50% {
-        background-color: #ccc;
+        background-color: #d4d4d4;
     }
 
     80% {
-        background-color: rgb(255, 255, 255);
+        background-color: #eee;
     }
 
-    100% {
-        background-color: rgb(255, 255, 255);
-    }
+    /* 100% {
+        background-color: ;
+    } */
 }
 
 @keyframes pyramid-left-animation {
@@ -161,32 +158,37 @@ body {
     }
     
     25% {
-        background-color: #eee;
+        background-color: #ddd;
     }
     
-    50% {
+    83% {
         background-color: #aaa;
+    }
+
+    93% {
+        background-color: #ddd;
+
     }
     
     100% {
-        background-color: rgb(255, 255, 255);
+        background-color: #ddd;
     }
 }
 
 @keyframes shadow-animation {
     0% {
-        clip-path: polygon(0 0, 100% 24%, 72% 0);
+        clip-path: polygon(0 0, 100% 24%, 70.5% 0);
     }
     
-    25% {
-        clip-path:polygon(0 0, 73% 23%, 72% 0);
+    5.5% {
+        clip-path:polygon(0 0, 73% 23%, 70.5% 0);
     }
     
     50% {
-        clip-path: polygon(0 0, 36% 37%, 72% 0);
+        clip-path: polygon(0 0, 36% 37%, 70.5% 0);
     }
     
     100% {
-        clip-path: polygon(0 0, 0 47%, 72% 0);
+        clip-path: polygon(0 0, 0 47%, 70.5% 0);
     }
 }
