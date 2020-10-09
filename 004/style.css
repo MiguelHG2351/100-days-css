@@ -38,7 +38,7 @@ body {
     background-color: #fff;
     border-radius: 50%;
     box-shadow: 12px 7px 18px 0px rgba(0, 0, 0, 0.4);
-    animation: jump-jump-1 2.5s infinite alternate cubic-bezier(0.60, 0.50, .70, .45) both;
+    animation: jump-jump-1 3s infinite alternate cubic-bezier(.59,.01,.26,.79) both;
 }
 
 .dot-2 {
@@ -50,7 +50,7 @@ body {
     background-color: #fff;
     border-radius: 50%;
     box-shadow: 12px 7px 18px 0px rgba(0, 0, 0, 0.4);
-    animation: jump-jump-2 2.5s infinite alternate cubic-bezier(0.60, 0.50, .70, .45) both;
+    animation: jump-jump-2 3s infinite alternate cubic-bezier(.59,.01,.26,.79) both;
 }
 
 .dot-3 {
@@ -62,7 +62,7 @@ body {
     background-color: #fff;
     border-radius: 50%;
     box-shadow: 12px 7px 18px 0px rgba(0, 0, 0, 0.4);
-    animation: jump-jump-3 2.5s infinite alternate cubic-bezier(0.60, 0.50, .70, .45) both;
+    animation: jump-jump-3 3s infinite alternate cubic-bezier(.59,.01,.26,.79) both;
 }
 
 @keyframes jump-jump-1 {
@@ -71,7 +71,7 @@ body {
         transform: scale(0);
     }
     
-    10% {
+    21% {
         transform: scale(1);
     }
 
@@ -84,7 +84,7 @@ body {
 
     }
     
-    40% {
+    30% {
         transform: scale(1);
 
     }
@@ -97,7 +97,7 @@ body {
         transform: scale(0);
     }
     
-    60% {
+    45% {
         transform: scale(1);
     }
 }

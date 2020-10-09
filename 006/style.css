@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    font-family: "Roboto";
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top right, #EEBE6C 0%, #CA7C4E 100%);
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    background-color: #fff;
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.profile {
+    height: 100%;
+}
+
+.avatar {
+    padding: 70px 70px 0 70px;
+    position: relative;
+}
+
+.image {
+    cursor: pointer;
+}
+
+.avatar  img {
+    border-radius: 50%;
+}
+
+.circle-1 {
+    position: absolute;
+    top: 38%;
+    left: 28%;
+    width: 44%;
+    height: 62%;
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #786450 #786450 transparent;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    transition: all ease-in-out  1.25s;
+}
+
+.image:hover .circle-1 {
+    border-color: #786450 #786450 transparent;
+    transform: rotate(-270deg);
+}
+
+
+.circle-2 {
+    position: absolute;
+    top: 36%;
+    left: 26%;
+    width: 48%;
+    height: 67%;
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #786450 #786450 transparent;
+    border-radius: 100%;
+    transform: rotate(-90deg);
+    transition: all ease-in-out 1.25s;
+}
+
+.image:hover .circle-2 {
+    border-color: #786450 #786450 transparent;
+    transform: rotate(270deg);
+}
+
+
+.name {
+    color: #786450;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.name p {
+    font-size: 12px;
+}
+
+.actions {
+    margin-top: 26px;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px 0;
+}
+
+.actions button {
+    border-radius: 18px;
+    padding: 6px 8px;
+    width: 62%;
+    background-color: transparent;
+    margin: 12px 0;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background ease 0.3s;
+    outline: none;
+    border: 1px solid #786450; 
+}
+
+.actions button:hover {
+    background: #786450;
+    color: #fff;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+    user-select: none;
+}
+
+.user-info > div {
+    transition: background ease 0.35s;
+}
+
+.user-info > div:hover {
+    background-color: #E1CFC2;
+}
+
+.post, .likes, .followers {
+    color: #786450;
+    background: #F5E8DF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    font-weight: 500;
+}
