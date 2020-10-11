@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Day 7</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="icon"
+            sizes="32x32"
+            href="https://100dayscss.com/favicon-32x32.png"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidenav"></div>
+            <div class="menu-hidden" id="menu-hidden">
+                <div class="item-menu">
+                    <i class="material-icons">home</i>
+                    Home
+                </div>
+                <div class="item-menu">
+                    <i class="material-icons">person</i>
+                    Home
+                </div>
+                <div class="item-menu">
+                    <i class="material-icons">notifications</i>
+                    Home
+                </div>
+                <div class="item-menu">
+                    <i class="material-icons">mail</i>
+                    Home
+                </div>
+                <div class="item-menu">
+                    <i class="material-icons">settings</i>
+                    Home
+                </div>
+            </div>
+            <div class="card" id="card">
+                <header class="header-card">
+                    <div class="btn-menu" id="btn-menu">
+                        <div class="line-1"></div>
+                        <div class="circle"></div>
+                        <div class="line-2"></div>
+                        <div class="line-3"></div>
+                    </div>
+                    <p>Notification</p>
+                    <div class="btn-search">
+                        <form id="form" class="form">
+                            <label for="search"
+                                ><i class="material-icons">search</i></label
+                            >
+                            <input type="text" id="search" />
+                        </form>
+                    </div>
+                </header>
+                <div class="info-card">
+                    <div class="timeline"></div>
+                    <ul class="notification-list">
+                        <li class="notification-item">
+                            <div class="getTime">9:24</div>
+                            <div class="notification-info">
+                                <strong class="user-name"> John Walker </strong>
+                                <p>posted a photo on your wall.</p>
+                            </div>
+                        </li>
+                        <li class="notification-item">
+                            <div class="getTime">12:50</div>
+                            <div class="notification-info">
+                                <strong class="user-name"> John Walker </strong>
+                                <p>commented your last post.</p>
+                            </div>
+                        </li>
+                        <li class="notification-item">
+                            <div class="getTime">15: 20</div>
+                            <div class="notification-info">
+                                <strong class="user-name">
+                                    Alice Parker
+                                </strong>
+                                <p>posted a photo on your wall.</p>
+                            </div>
+                        </li>
+                        <li class="notification-item">
+                            <div class="getTime">20: 02</div>
+                            <div class="notification-info">
+                                <strong class="user-name"> Luke Wayne </strong>
+                                <p>posted a photo on your wall.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            const $card = document.getElementById('card')
+            const $btnMenu = document.getElementById('btn-menu')
+            const $menuHidden = document.getElementById('menu-hidden')
+            $btnMenu.addEventListener('click', e => {
+                $card.classList.toggle('active')
+                $menuHidden.classList.toggle('active')
+            })
+        </script>
+    </body>
+</html>
