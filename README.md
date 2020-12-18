@@ -58,3 +58,14 @@ se utilizo:
 
 [DEMO](https://miguelhg2351.github.io/100-days-css/007)
 
+# Día 8
+
+- [SVG](https://developer.mozilla.org/es/docs/Web/SVG)
+
+- [Animaciones](https://developer.mozilla.org/es/docs/Web/CSS/animation)
+
+- [Pseudo elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos)
+
+- [Filter CSS](https://developer.mozilla.org/es/docs/Web/CSS/filter)
+
+[DEMO](https://miguelhg2351.github.io/100-days-css/008)
