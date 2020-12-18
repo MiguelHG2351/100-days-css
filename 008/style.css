@@ -20,6 +20,8 @@ body {
     width: 400px;
     height: 400px;
     border: 1px solid #09f;
+    filter: contrast(25);
+    background-color: #000;
 }
 
 .ball {
@@ -38,43 +40,276 @@ body {
     right: 0;
     bottom: 0;
     border-radius: 100%;
-    
+    filter: blur(15px);
 }
 
 .blubb1 {
     --width: 60px;
     width: var(--width);
     height: var(--width);
-    background-color: red;
+    background-color: #fff;
     position: absolute;
 }
 
-.blubb1::before {
-    --width: 60px;
+.blubb1::after {
+    --width: 80px;
     content: '';
     position: absolute;
     width: var(--width);
     height: var(--width);
     border-radius: 100%;
-    background-color: #09f;
+    background-color: #fff;
     left: 0;
     top: 0;
     animation-name: rotate;
     animation-timing-function: ease-in-out;
-    animation-duration: 0.3s;
+    animation-duration: 2.7s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transform-origin: center left 2px;
+    transform-origin: center left;
+    animation-delay: 96ms;
+    filter: blur(3px);
     /* animation-fill-mode: forwards; */
 }
 
-@keyframes rotate {
-    from {
-        transform: rotate(80deg);
-    }
+.blubb2 {
+    --width: 60px;
+    width: var(--width);
+    height: var(--width);
+    background-color: #fff;
+    position: absolute;
+}
+
+.blubb2::before {
+    --width: 70px;
+    content: '';
+    position: absolute;
+    width: var(--width);
+    height: var(--width);
+    border-radius: 100%;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    animation-name: rotate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2.7s;
+    animation-iteration-count: infinite;
+    transform-origin: center right;
+    animation-delay: 200ms;
+    /* animation-fill-mode: forwards; */
+}
+
+.blubb3 {
+    --width: 60px;
+    width: var(--width);
+    height: var(--width);
+    background-color: #fff;
+    position: absolute;
+}
+
+.blubb3::before {
+    --width: 70px;
+    content: '';
+    position: absolute;
+    width: var(--width);
+    height: var(--width);
+    border-radius: 100%;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    animation-name: rotate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2.7s;
+    animation-iteration-count: infinite;
+    transform-origin: center top;
+    animation-delay: 550ms;
+    /* animation-fill-mode: forwards; */
+}
+
+.blubb4 {
+    --width: 60px;
+    width: var(--width);
+    height: var(--width);
+    background-color: #fff;
+    position: absolute;
+}
+
+.blubb4::before {
+    --width: 70px;
+    content: '';
+    position: absolute;
+    width: var(--width);
+    height: var(--width);
+    border-radius: 100%;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    animation-name: rotate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2.7s;
+    animation-iteration-count: infinite;
+    transform-origin: top right;
+    animation-delay: 750ms;
+    /* animation-fill-mode: forwards; */
+}
+
+.sparkle1 {
+    --width: 60px;
+    width: var(--width);
+    height: var(--width);
+    background-color: #fff;
+    position: absolute;
     
-    to {
-        transform: rotate(240deg);
+}
+
+.sparkle1::after {
+    transform-origin: 80px 80px;
+    animation-delay: 250ms;
+    --width: 35px;
+    width: var(--width);
+    height: var(--width);
+}
+
+.sparkle::after {
+    content: '';
+    position: absolute;
+    border-radius: 100%;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    animation-name: rotate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3.7s;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode: forwards; */
+}
+
+.sparkle2 {
+    --width: 60px;
+    width: var(--width);
+    height: var(--width);
+    background-color: #fff;
+    position: absolute;
+    
+}
+
+.sparkle2::after {
+    --width: 35px;
+    width: var(--width);
+    height: var(--width);
+    transform-origin: 80px 80px;
+    animation-delay: 250ms;
+}
+
+.sparkle3 {
+    --width: 60px;
+    width: var(--width);
+    height: var(--width);
+    background-color: #fff;
+    position: absolute;
+    transform: rotate(200deg);
+}
+
+.sparkle3::after {
+    transform-origin: 120px 80px;
+    animation-delay: 250ms;
+    --width: 35px;
+    width: var(--width);
+    height: var(--width);
+}
+
+.sparkle4 {
+    --width: 60px;
+    width: var(--width);
+    height: var(--width);
+    background-color: #fff;
+    position: absolute;
+    transform: rotate(200deg);
+}
+
+.sparkle4::after {
+    transform-origin: 80px 80px;
+    animation-delay: 250ms;
+    --width: 35px;
+    width: var(--width);
+    height: var(--width);
+}
+
+.sparkle5 {
+    --width: 60px;
+    width: var(--width);
+    height: var(--width);
+    background-color: #fff;
+    position: absolute;
+    transform: rotate(200deg);
+}
+
+.sparkle5::after {
+    transform-origin: 70px 117px;
+    animation-delay: 460ms;
+    --width: 35px;
+    width: var(--width);
+    height: var(--width);
+}
+
+.sparkle6 {
+    --width: 60px;
+    width: var(--width);
+    height: var(--width);
+    background-color: #fff;
+    position: absolute;
+    transform: rotate(200deg);
+}
+
+.sparkle6::after {
+    transform-origin: 61px 90px;
+    animation-delay: 650ms;
+    --width: 35px;
+    width: var(--width);
+    height: var(--width);
+}
+
+.sparkle7 {
+    --width: 60px;
+    width: var(--width);
+    height: var(--width);
+    background-color: #fff;
+    position: absolute;
+    transform: rotate(200deg);
+}
+
+.sparkle7::after {
+    transform-origin: 80px 100px;
+    animation-delay: 700ms;
+    --width: 35px;
+    width: var(--width);
+    height: var(--width);
+}
+
+.sparkle8 {
+    --width: 60px;
+    width: var(--width);
+    height: var(--width);
+    background-color: #fff;
+    position: absolute;
+    transform: rotate(200deg);
+}
+
+.sparkle8::after {
+    transform-origin: 80px 118px;
+    animation-delay: 1.7s;
+    --width: 35px;
+    width: var(--width);
+    height: var(--width);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+
+    100% {
+        transform: rotate(360deg);
     }
 
 }
