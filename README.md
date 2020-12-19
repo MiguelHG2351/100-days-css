@@ -5,6 +5,8 @@ Se utilizo:
 - -webkit-fill-available, alternativa a fit-content
 - [filter: progid:DXImageTransform.Microsoft.gradient](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms532997(v=vs.85))
 
+![Día 1](images/day1.png)
+
 [DEMO](https://miguelhg2351.github.io/100-days-css/01)
 
 # Día 2
@@ -12,6 +14,9 @@ Se utilizo:
 se utilizo:
 
 - Animaciones básicas y la función ```css rotate()```
+
+![Día 2](images/day2.png)
+
 
 [DEMO](https://miguelhg2351.github.io/100-days-css/02)
 
@@ -25,12 +30,16 @@ se utilizo:
 
 - [Animaciones](https://developer.mozilla.org/es/docs/Web/CSS/animation)
 
+![Día 3](images/day3.png)
+
 [DEMO](https://miguelhg2351.github.io/100-days-css/03)
 
 # Día 4
 
 - [Animaciones](https://developer.mozilla.org/es/docs/Web/CSS/animation)
 - [scale](https://developer.mozilla.org/es/docs/Web/CSS/transform-function/scale)
+
+![Día 4](images/day4.png)
 
 [DEMO](https://miguelhg2351.github.io/100-days-css/04)
 
@@ -40,6 +49,8 @@ se utilizo:
 
 - [Pseudo elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos)
 
+![Día 5](images/day5.png)
+
 [DEMO](https://miguelhg2351.github.io/100-days-css/05)
 
 # Día 6
@@ -48,6 +59,8 @@ se utilizo:
 
 - [Animaciones](https://developer.mozilla.org/es/docs/Web/CSS/animation)
 
+![Día 6](images/day6.png)
+
 [DEMO](https://miguelhg2351.github.io/100-days-css/06)
 
 # Día 7
@@ -55,6 +68,8 @@ se utilizo:
 - [SVG](https://developer.mozilla.org/es/docs/Web/SVG)
 
 - [CSS y SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS)
+
+![Día 7](images/day7.png)
 
 [DEMO](https://miguelhg2351.github.io/100-days-css/07)
 
@@ -68,6 +83,8 @@ se utilizo:
 
 - [Filter CSS](https://developer.mozilla.org/es/docs/Web/CSS/filter)
 
+![Día 8](images/day8.png)
+
 [DEMO](https://miguelhg2351.github.io/100-days-css/08)
 
 # Día 9
@@ -76,6 +93,7 @@ se utilizo:
 
 - [Pseudo elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos)
 
+![Día 9](images/day9.png)
 
 [DEMO](https://miguelhg2351.github.io/100-days-css/09)
 
@@ -87,5 +105,6 @@ se utilizo:
 
 - [Pseudo elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos)
 
+![Día 10](images/day10.png)
 
 [DEMO](https://miguelhg2351.github.io/100-days-css/10)
