@@ -1,0 +1,232 @@
+* {
+    font-family: "Roboto";
+    margin: 0;
+}
+
+body {
+    background: #333;
+    height: 100vh;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.figure {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    background-color: #4c4c4c;
+}
+
+.clock {
+    --size: 267px;
+    width: var(--size);
+    height: var(--size);
+    border: 10px solid #3a3a3a;
+    border-radius: 50%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.spinner {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    z-index: 10;
+}
+
+.spinner circle {
+    stroke: #F85B5B;
+    stroke-width: 3;
+    fill: none;
+    stroke-dasharray: 756;
+    animation: timing 5s ease infinite;
+    transform-origin: center center;
+}
+
+@keyframes timing {
+    0% {
+        stroke-dashoffset: 756;
+        transform: rotate(-90deg) scaleY(1);
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+        transform: rotate(-90deg) scaleY(1);
+    }
+
+    50.001% {
+        transform: rotate(-90deg) scaleY(-1);
+    }
+    
+    100% {
+        stroke-dashoffset: 756;
+        transform: rotate(-90deg) scaleY(-1);
+    }
+}
+
+.point-set-1,
+.point-set-2,
+.point-set-3,
+.point-set-4,
+.point-set-5,
+.point-set-6,
+.point-set-7,
+.point-set-8,
+.point-set-9,
+.point-set-10,
+.point-set-11,
+.point-set-12,
+.point-set-13,
+.point-set-14,
+.point-set-15 {
+    --size: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--size);
+    height: var(--size);
+}
+
+.point-set-1 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+}
+
+.point-set-2 {
+    transform: translateX(-50%) translateY(-50%) rotate(6deg);
+}
+
+.point-set-3 {
+    transform: translateX(-50%) translateY(-50%) rotate(12deg);
+}
+
+.point-set-4 {
+    transform: translateX(-50%) translateY(-50%) rotate(18deg);
+}
+
+.point-set-5 {
+    transform: translateX(-50%) translateY(-50%) rotate(24deg);
+}
+
+.point-set-6 {
+    transform: translateX(-50%) translateY(-50%) rotate(30deg);
+}
+
+.point-set-7 {
+    transform: translateX(-50%) translateY(-50%) rotate(36deg);
+}
+
+.point-set-8 {
+    transform: translateX(-50%) translateY(-50%) rotate(42deg);
+}
+
+.point-set-9 {
+    transform: translateX(-50%) translateY(-50%) rotate(48deg);
+}
+
+.point-set-10 {
+    transform: translateX(-50%) translateY(-50%) rotate(54deg);
+}
+
+.point-set-11 {
+    transform: translateX(-50%) translateY(-50%) rotate(60deg);
+}
+
+.point-set-12 {
+    transform: translateX(-50%) translateY(-50%) rotate(66deg);
+}
+
+.point-set-13 {
+    transform: translateX(-50%) translateY(-50%) rotate(72deg);
+}
+
+.point-set-14 {
+    transform: translateX(-50%) translateY(-50%) rotate(78deg);
+}
+
+.point-set-15 {
+    transform: translateX(-50%) translateY(-50%) rotate(84deg);
+}
+
+.point-1,
+.point-2,
+.point-3,
+.point-4 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.point-1 {
+    top: 0;
+    left: 0;
+}
+
+.point-2 {
+    top: 0;
+    right: 0;
+}
+
+.point-3 {
+    bottom: 0;
+    left: 0;
+}
+
+.point-4 {
+    bottom: 0;
+    right: 0;
+}
+
+.info {
+    position: absolute;
+    color: #fff;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px 0;
+    text-align: center;
+}
+
+.date {
+    font-size: 14px;
+}
+
+.time {
+    font-size: 28px;
+}
+
+.beat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.beat span i {
+    color: #F85B5B;
+    animation: moveHeart 0.8s ease infinite;
+    transition: all ease 0.18s;
+    margin-right: 5px;
+}
+
+@keyframes moveHeart {
+    from {
+        transform: scale(1);
+    }   
+    
+    to {
+        transform: scale(1.2);
+    }
+    
+}
