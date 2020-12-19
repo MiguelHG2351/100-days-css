@@ -77,7 +77,7 @@ se utilizo:
 - [Pseudo elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos)
 
 
-[DEMO](https://miguelhg2351.github.io/100-days-css/08)
+[DEMO](https://miguelhg2351.github.io/100-days-css/09)
 
 # Día 10
 
