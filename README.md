@@ -108,3 +108,15 @@ se utilizo:
 ![Día 10](images/day10.png)
 
 [DEMO](https://miguelhg2351.github.io/100-days-css/10)
+
+# Día 11
+
+- [SVG](https://developer.mozilla.org/es/docs/Web/SVG)
+
+- [Animaciones](https://developer.mozilla.org/es/docs/Web/CSS/animation)
+
+- [Pseudo elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos)
+
+![Día 11](images/day11.png)
+
+[DEMO](https://miguelhg2351.github.io/100-days-css/11)

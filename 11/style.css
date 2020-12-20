@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #333;
+    height: 100vh;
+}
+
+.frame {
+    --size: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    /* transform: translateX(-50%) translateY(-50%); */
+    margin-left: calc(var(--size)/2 * -1);
+    margin-top: calc(var(--size)/2 * -1);
+    width: var(--size);
+    height: var(--size);
+    border: 1px solid #fff;
+    background-color: #e7d2b7;
+    box-shadow: 1px -1px 10px 0.5px #000 inset;
+    box-sizing: border-box;
+}
+
+.invisible-men {
+    animation-name: fade-in;
+    animation-delay: 1000ms;
+    animation-duration: 800ms;
+    animation-play-state: running;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.leg {
+    position: absolute;
+    top: 0;
+    left: 174px;
+    height: 245px;
+    width: 151px;
+    /* transform-origin: 50% 0; */
+    transform-origin: top center;
+    animation-name: leg-swing;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1152.66ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+.leg.left {
+    z-index: 4;
+}
+
+.leg.right {
+    animation-delay: 1037.0672948328267ms;
+    animation-duration: 1169.5535562310033ms;
+    z-index: 4;
+}
+
+@keyframes leg-swing {
+    0% {
+        transform: rotate(-22deg);
+    }
+    
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+.shoe {
+    position: absolute;
+    bottom: 0;
+    animation-name: shoe-turn;
+    animation-duration: 1152.66ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    transition: all ease 0.2s;
+}
+
+@keyframes shoe-turn {
+
+    0% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(-10px);
+    }
+    
+    100%{
+        transform: translateY(0);
+
+    }
+}
+
+.floor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 156px;
+    background-color: #232323;
+}
