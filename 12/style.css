@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    font-family: "Roboto";
+}
+
+body {
+    height: 100vh;
+}
+
+
+.container {
+    --size: 400px;
+    width: var(--size);
+    height: var(--size);
+    background-color: #4cb6de;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: calc((var(--size) / 2 ) * -1);
+    margin-left: calc((var(--size) / 2 ) * -1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.qoute {
+    width: 90%;
+    margin: auto;
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.qoute blockquote {
+    line-height: 1.6;
+}
+
+.qoute blockquote span:hover .tooltip {
+    opacity: 1;
+    z-index: 5;
+    transform: scale(0.8) translateY(-225px);
+}
+
+.qoute blockquote span {
+    background-color: #286f8a;
+    padding: 8px;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.tooltip {
+    position: absolute;
+    /* top: -135px; */
+    left: -86px;
+    width: 300px;
+    opacity: 0;
+    transition: all ease 0.5s;
+    font-size: 16px;
+    transform: scale(0.8) translateY(-285px);
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 20px);
+    transform: rotate(45deg) translateY(-15px);
+    width: 20px;
+    height: 20px;
+    background-color: #286f8a;
+}
+
+.header-tootip {
+    padding: 8px 12px;
+    background-color: #fff !important;
+    color: #679fc9;
+    width: -webkit-fill-available;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.info {
+    background-color: #286f8a;
+    padding: 8px 12px;
+    box-sizing: border-box;
+}
+
+cite {
+    font-weight: 400;
+    font-size: 18px;
+}
