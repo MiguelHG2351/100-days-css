@@ -111,12 +111,24 @@ se utilizo:
 
 # Día 11
 
-- [SVG](https://developer.mozilla.org/es/docs/Web/SVG)
+- [Transform origin](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin)
+
+- [Animaciones](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
+
+- [Pseudo elementos](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudoelementos)
+
+![Día 11](images/day11.png)
+
+[DEMO](https://miguelhg2351.github.io/100-days-css/11)
+
+# Día 12
+
+- [Transform](https://developer.mozilla.org/es/docs/Web/CSS/transform)
 
 - [Animaciones](https://developer.mozilla.org/es/docs/Web/CSS/animation)
 
 - [Pseudo elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos)
 
-![Día 11](images/day11.png)
+![Día 12](images/day12.png)
 
-[DEMO](https://miguelhg2351.github.io/100-days-css/11)
+[DEMO](https://miguelhg2351.github.io/100-days-css/12)
