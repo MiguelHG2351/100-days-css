@@ -15,7 +15,7 @@ se utilizo:
 
 - Animaciones básicas y la función ```css rotate()```
 
-![Día 2](images/day2.png)
+![Día 2](images/day2.gif)
 
 
 [DEMO](https://miguelhg2351.github.io/100-days-css/02)
@@ -30,7 +30,7 @@ se utilizo:
 
 - [Animaciones](https://developer.mozilla.org/es/docs/Web/CSS/animation)
 
-![Día 3](images/day3.png)
+![Día 3](images/day3.gif)
 
 [DEMO](https://miguelhg2351.github.io/100-days-css/03)
 
@@ -39,7 +39,7 @@ se utilizo:
 - [Animaciones](https://developer.mozilla.org/es/docs/Web/CSS/animation)
 - [scale](https://developer.mozilla.org/es/docs/Web/CSS/transform-function/scale)
 
-![Día 4](images/day4.png)
+![Día 4](images/day4.gif)
 
 [DEMO](https://miguelhg2351.github.io/100-days-css/04)
 
@@ -83,7 +83,7 @@ se utilizo:
 
 - [Filter CSS](https://developer.mozilla.org/es/docs/Web/CSS/filter)
 
-![Día 8](images/day8.png)
+![Día 8](images/day8.gif)
 
 [DEMO](https://miguelhg2351.github.io/100-days-css/08)
 
@@ -93,7 +93,7 @@ se utilizo:
 
 - [Pseudo elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos)
 
-![Día 9](images/day9.png)
+![Día 9](images/day9.gif)
 
 [DEMO](https://miguelhg2351.github.io/100-days-css/09)
 
@@ -105,7 +105,7 @@ se utilizo:
 
 - [Pseudo elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos)
 
-![Día 10](images/day10.png)
+![Día 10](images/day10.gif)
 
 [DEMO](https://miguelhg2351.github.io/100-days-css/10)
 
@@ -117,7 +117,7 @@ se utilizo:
 
 - [Pseudo elementos](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudoelementos)
 
-![Día 11](images/day11.png)
+![Día 11](images/day11.gif)
 
 [DEMO](https://miguelhg2351.github.io/100-days-css/11)
 
@@ -129,7 +129,7 @@ se utilizo:
 
 - [Pseudo elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos)
 
-![Día 12](images/day12.png)
+![Día 12](images/day12.gif)
 
 [DEMO](https://miguelhg2351.github.io/100-days-css/12)
 
