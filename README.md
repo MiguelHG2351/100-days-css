@@ -132,3 +132,15 @@ se utilizo:
 ![Día 12](images/day12.png)
 
 [DEMO](https://miguelhg2351.github.io/100-days-css/12)
+
+# Día 13
+
+- [Transform](https://developer.mozilla.org/es/docs/Web/CSS/transform)
+
+- [Animaciones](https://developer.mozilla.org/es/docs/Web/CSS/animation)
+
+- [Pseudo elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos)
+
+![Día 12](images/day13.gif)
+
+[DEMO](https://miguelhg2351.github.io/100-days-css/12)
