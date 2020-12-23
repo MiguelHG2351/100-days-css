@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: radial-gradient(
+        circle at center top,
+        hsl(214, 47%, 23%) 20%,
+        hsl(237, 49%, 15%)
+    );
+    height: 100vh;
+}
+
+.center {
+    --margin-center: calc(var(--size)/2 * -1 );
+    top: 50%;
+    left: 50%;
+    transform: translateX(var(--margin-center)) translateY(var(--margin-center));
+}
+
+.frame {
+    --size: 400px;
+    background-color: #4b4841;
+    width: var(--size);
+    height: var(--size);
+    position: relative;
+
+}
+
+.card {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50% - 100px);
+    margin: 0 auto;
+    width: 80%;
+    height: 200px;
+}
+
+.flip {
+    width: 100%;
+    height: 100%;
+    background-color: #ffce4e;
+    border-radius: 12px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all ease 1s;
+}
+
+.flip:hover {
+    transform: rotateX(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 03s;
+}
+
+.front img {
+    animation-name: scaleBycicle;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    transition: all ease 3s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+@keyframes scaleBycicle {
+    0%, 100% {
+        transform: scaleY(1);
+    }
+    
+    50% {
+        transform: scaleY(1.03);
+    }
+}
+
+.back img {
+    animation-name: scaleHelicopter;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    transition: all ease 3s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+@keyframes scaleHelicopter {
+    from {
+        transform: translateY(-5px);
+    }
+    
+    to {
+        transform: translateY(5px);
+    }
+}
+
+.front {
+    /* transform: rotateX(0deg); */
+    z-index: 2;
+}
+
+.back {
+    perspective: 800px;
+    transform: rotateX(180deg);
+}
