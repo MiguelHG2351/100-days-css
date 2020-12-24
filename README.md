@@ -141,6 +141,18 @@ se utilizo:
 
 - [Pseudo elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos)
 
-![Día 12](images/day13.gif)
+![Día 13](images/day13.gif)
 
 [DEMO](https://miguelhg2351.github.io/100-days-css/12)
+
+# Día 14
+
+- [Transform](https://developer.mozilla.org/es/docs/Web/CSS/transform)
+
+- [Animaciones](https://developer.mozilla.org/es/docs/Web/CSS/animation)
+
+- [Pseudo elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos)
+
+![Día 14](images/day14.gif)
+
+[DEMO](https://miguelhg2351.github.io/100-days-css/14)
