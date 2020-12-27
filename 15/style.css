@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    font-family: "Roboto";
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #09f
+}
+
+/* global styles */
+
+.responsive-img-cover {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    --size: 400px;
+    width: var(--size);
+    height: var(--size);
+    background-image: linear-gradient(45deg, #3c93a9, #5a9f5d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-file-container {
+    background-color: #fff;
+    width: 320px;
+    height: 320px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.title {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.32);
+    color: gray;
+    font-size: 16px;
+}
+
+.upload {
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    --shadow: 0px 2px 2px 0px rgb(50 127 9 / 94%);
+    text-transform: capitalize;
+    padding: 12px 8px;
+    color: #fff;
+    background-color: #6ece3b;
+    border: none;
+    border-radius: 6px;
+    width: 150px;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: 0px 2px 2px 0px rgb(50 127 9 / 94%);
+    cursor: pointer;
+    transition: box-shadow 0.21s ease;
+}
+
+.btn:hover {
+    --shadow: 0px 2px 2px 0px rgb(50 127 9 / 94%), 0px 0px 9px 2px rgb(80 195 19 / 94%);
+    box-shadow: var(--shadow);
+}
+
+.upload-files {
+    --width: 100px;
+    --height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    overflow: hidden;
+    width: var(--width);
+    height: var(--height);
+    border: 1px dashed #333;
+}
+
+.content-upload {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.content-upload.is-draggable {
+    background-color: #eee;
+}
+
+.content-upload p {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    word-break: break-all;
+}
+
+.content-upload input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    outline: none;
+    opacity: 0;
+}
+
+.content-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* available property -> Browser -> webkit | Firefox | Microsoft Edge | Opera */
+    height: -webkit-fill-available;
+    height: -moz-fill-available;
+    height: -ms-fill-available;
+    height: -o-fill-available;
+}
+
+/* Active fileName */
+
+.active-fileName img {
+    opacity: 0;
+}
+
+.sync, .done {
+    display: none;
+}
+
+.active-fileName p {
+    padding: 8px;
+    font-size: 16px;
+    display: block;
+    pointer-events: none;
+}
+
+/* submit files */
+
+.submit-file > :not(.sync) {
+    transition: opacity 0.2s ease;
+    display: none;
+    opacity: 0;
+}
+
+.submit-file .sync {
+    display: block;
+    animation-name: rotate360;
+    animation-timing-function: ease;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    transition: all 0.2s ease;
+}
+
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    
+    50% {
+        opacity: 1;
+    }
+    
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.submit-file .done {
+    animation-name: done;
+    animation-timing-function: ease;
+    animation-delay: 2.5s;
+    animation-duration: 0.7s;
+    animation-fill-mode: both;
+    transition: all 0.2s ease;
+    display: block;
+}
+
+@keyframes done {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+
+}
