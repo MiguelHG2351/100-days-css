@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #03a;
+}
+
+.frame {
+    --size: 400px;
+    --margin: calc(var(--size) / 2 * -1);
+    width: var(--size);
+    height: var(--size);
+    background-color: #46a6da;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: var(--margin);
+    margin-top: var(--margin);
+    overflow: hidden;
+}
+
+
+.blobb {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 155px;
+    top: 155px;
+    animation-name: blobby;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blobby {
+    0% {
+		transform: translate3d(0,-300px,0) scaleY(1.2);
+	}
+	10% {
+		transform: translate3d(0,50px,0) scaleY(0.8);
+	}
+	14% {
+		transform: translate3d(0,-30px,0) scaleY(1.1);
+	}
+	18% {
+		transform: translate3d(0,10px,0) scaleY(0.9);
+	}
+	20%, 22% {
+		transform: translate3d(0,0,0) scaleY(1);
+	}
+	26% {
+		transform: translate3d(0,0,0) scale(1.2);
+	}
+	32%,74% {
+		transform: translate3d(0,0,0) scale(0);
+	}
+	80% {
+		transform: translate3d(0,0,0) scale(1.2);
+	}
+	84% {
+		transform: translate3d(0,0,0) scale(0.9);
+	}
+	86%, 88% {
+		transform: translate3d(0,0,0) scale(1);
+	}
+	92% {
+		transform: translate3d(0,-30px,0) scaleY(0.9);
+	}
+	100% {
+		transform: translate3d(0,300px,0) scaleY(1.2);
+	}
+}
+
+.octagon {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    fill: #fff;
+    animation: octa 5s ease-in-out 0s infinite normal none;
+}
+
+@keyframes octa {
+	0%, 30% {
+		transform: translate3d(0,0,0) scale(0) rotate(22.5deg);
+	}
+	36% {
+		transform: translate3d(0,0,0) scale(1.2) rotate(22.5deg);
+	}
+	40% {
+		transform: translate3d(0,0,0) scale(0.9) rotate(22.5deg);
+	}
+	42%, 44% {
+		transform: translate3d(0,0,0) scale(1) rotate(22.5deg);
+	}
+	48% {
+		transform: translate3d(0,0,0) scale(1.2) rotate(22.5deg);
+	}
+	54%, 100% {
+		transform: translate3d(0,0,0) scale(0) rotate(22.5deg);
+	}
+}
+
+.blobb-sparkle {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 145px;
+    left: 145px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    animation: blobb-sparkle 5s ease-in-out infinite;
+}
+
+@keyframes blobb-sparkle {
+    0%, 74% {
+    transform: translate3d(0, 0, 0) scale(0);
+    opacity: 1;
+ }
+
+ 80% {
+     opacity: 1;
+ }
+
+ 84%, 100% {
+    transform: translate3d(0, 0, 0) scale(1.4);
+    opacity: 0;
+ }
+
+}
+
+.octa-sparkles {
+    animation: octa-sparkle 5s ease-in-out infinite;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    left: 100px;
+}
+
+.sparkle {
+    position: absolute;
+    top: 0;
+    left: 98px;
+    width: 4px;
+    height: 200px;
+}
+
+.sparkle::after, .sparkle::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.sparkle::before {
+    top: unset;
+    bottom: 0;
+}
+
+.s2 {
+    transform: rotate(45deg);
+}
+
+.s3 {
+    transform: rotate(90deg);
+}
+
+.s4 {
+    transform: rotate(135deg);
+}
+
+@keyframes octa-sparkle {
+    0%, 30% {
+		transform: translate3d(0,0,0) scale(0);
+		opacity: 1;
+	}
+	36% {
+		opacity: 1;
+	}
+	40%, 100% {
+		transform: translate3d(0,0,0) scale(1.4);
+		opacity: 0;
+	}
+}
+
+
+.triangle {
+    width: 106px;
+    height: 90px;
+    position: absolute;
+    top: 145px;
+    left: 147px;
+    fill: #fff;
+    animation: triangle 5s ease-in-out infinite;
+}
+
+.triangle-sparkles {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    left: 100px;
+    animation: triangle-sparkle 5s ease-in-out infinite;
+}
+
+.triangle-sparkles .s1 {
+    top: 10px;
+}
+
+.triangle-sparkles .s1::before {
+    bottom: unset;
+}
+
+.triangle-sparkles .s2 {
+    transform: rotate(124deg);
+}
+
+.triangle-sparkles .s2::before {
+    top: 0;
+    bottom: unset;
+}
+
+.triangle-sparkles .s3 {
+    transform: rotate(237deg);
+}
+
+.triangle-sparkles .s3::before {
+    bottom: unset;
+}
+
+@keyframes triangle {
+    0%, 52% {
+		transform: translate3d(0,0,0) scale(0);
+	}
+	58% {
+		transform: translate3d(0,0,0) scale(1.2);
+	}
+	62% {
+		transform: translate3d(0,0,0) scale(0.9);
+	}
+	64%, 66% {
+		transform: translate3d(0,0,0) scale(1);
+	}
+	70% {
+		transform: translate3d(0,0,0) scale(1.2);
+	}
+	76%, 100% {
+		transform: translate3d(0,0,0) scale(0);
+	}
+}
+
+@keyframes triangle-sparkle {
+    0%, 52% {
+		transform: translate3d(0,0,0) scale(0);
+		opacity: 1;
+	}
+	58% {
+		opacity: 1;
+	}
+	62%, 100% {
+		transform: translate3d(0,0,0) scale(1.4);
+		opacity: 0;
+	}
+}
