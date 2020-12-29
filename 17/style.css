@@ -1,0 +1,83 @@
+
+body {
+    background-color: #09f;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.stripes {
+    position: relative;
+    top: -67px;
+    left: -100px;
+    width: 600px;
+    transform: rotate(45deg);
+}
+
+.stripe {
+    width: 600px;
+    height: 3px;
+    margin-bottom: 16px;
+    background-color: #353535;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 260px;
+  height: 260px;
+  background-color: #353535;
+  transform: translate(-50%,-50%);
+}
+
+.polygon {
+    width: 160px;
+    height: 140px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+
+.middle, .dark, .light {
+    transition: all ease-in-out 0.5s;
+}
+
+.middle {
+    fill: #ccc;
+}
+
+.dark {
+    fill: #aaa;
+}
+
+.light {
+    fill: #eeeeee;
+}
+
+.polygon:hover .light {
+    fill: #aaa;
+}
+
+.polygon:hover .dark {
+    fill: #ccc;
+}
+
+.polygon:hover .middle {
+    fill: #eee;
+}
