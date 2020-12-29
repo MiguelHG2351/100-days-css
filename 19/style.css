@@ -1,0 +1,97 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    background-color: #3498db;
+    border-left: 400px solid #9b59b6;
+	border-right: 400px solid #1abc9c;
+	z-index: 1;
+	transform: translateX(0);
+	transition: transform 1s ease;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	z-index: 3;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	top: 175px;
+	cursor: pointer;
+}
+
+#c1 {
+	left: 115px;
+}
+
+#c2 {
+	left: 175px;
+}
+
+#c3 {
+	left: 235px;
+}
+
+.ball {
+	position: absolute;
+	top: 182px;
+	left: 122px;
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 50%;
+	z-index: 2;
+	box-sizing: border-box;
+	transform: translateX(0);
+	transition: all ease 1s;
+}
+
+#check-2:checked ~ .ball {
+	transform: translateX(60px);
+}
+
+#check-2:checked ~ .bg {
+	transform: translateX(-400px);
+}
+
+#check-3:checked ~ .bg {
+	transform: translateX(-800px);
+}
+
+#check-3:checked ~ .ball {
+	transform: translateX(120px);
+}
