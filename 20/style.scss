@@ -1,0 +1,35 @@
+$font: "Roboto", Arial;
+$primary-Color: #220;
+$secondary-color: #fff;
+$bg-body: #09f;
+
+* {
+    margin: 0;
+}
+
+h2 {
+    color: red;
+    font-family: $font;
+    color: $primary-Color;
+}
+
+ol {
+    color: $secondary-color;
+    display: flex;
+    width: 100vw;
+    padding: 0;
+    justify-content: space-evenly;
+    background-color: $bg-body;
+    box-sizing: border-box;
+    font-family: $font;
+    li {
+        cursor: pointer;
+        list-style: none;
+        padding: 12px 22px;
+        transition: background 0.3s ease;
+    }
+
+    li:hover {
+        background-color: rgb(255, 208, 0);
+    }
+}

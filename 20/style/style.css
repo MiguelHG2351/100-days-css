@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+}
+
+h2 {
+  color: red;
+  font-family: "Roboto", Arial;
+  color: #220;
+}
+
+ol {
+  color: #fff;
+  display: flex;
+  width: 100vw;
+  padding: 0;
+  justify-content: space-evenly;
+  background-color: #09f;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial;
+}
+ol li {
+  cursor: pointer;
+  list-style: none;
+  padding: 12px 22px;
+  transition: background 0.3s ease;
+}
+ol li:hover {
+  background-color: #ffd000;
+}
+
+/*# sourceMappingURL=style.css.map */
