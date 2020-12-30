@@ -1,31 +1,148 @@
-* {
-  margin: 0;
-}
-
-h2 {
-  color: red;
-  font-family: "Roboto", Arial;
-  color: #220;
-}
-
-ol {
-  color: #fff;
-  display: flex;
-  width: 100vw;
-  padding: 0;
-  justify-content: space-evenly;
-  background-color: #09f;
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -200px;
+  width: 400px;
+  height: 400px;
+  background-color: #2c3e50;
   box-sizing: border-box;
-  font-family: "Roboto", Arial;
+  overflow: hidden;
 }
-ol li {
+.frame .circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #354a5f;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+.frame .icon {
+  width: 120px;
+  height: 70px;
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: -35px;
+  fill: none;
+  stroke-width: 2px;
+  stroke: #ecf0f1;
+  stroke-linecap: round;
+  stroke-dasharray: 325 325;
+  stroke-dashoffset: 0;
+}
+.frame .icon.plane {
+  width: 120px;
+  height: 110px;
+  stroke-dashoffset: 326;
+}
+@keyframes flyn {
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: translate3d(350px, -202px, 0);
+  }
+}
+.frame .btn {
+  font-family: "Roboto";
+  position: absolute;
+  top: 80%;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -100px;
+  box-sizing: border-box;
+  background-color: #ecf0f1;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  height: fit-content;
   cursor: pointer;
-  list-style: none;
-  padding: 12px 22px;
-  transition: background 0.3s ease;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+  color: #556472;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  transition: all ease-in-out 0.1s;
 }
-ol li:hover {
-  background-color: #ffd000;
+.frame .btn:hover {
+  background-color: #1abc9c;
+  color: #fff;
+}
+.frame #check:checked ~ .icon.mail {
+  stroke-dashoffset: 325;
+  transition: stroke-dashoffset ease-in-out 1000ms;
+}
+.frame #check:checked ~ .icon.plane {
+  transition: stroke-dashoffset 1s ease-in-out;
+  transition-delay: 1000ms;
+  animation-name: flyn;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+  stroke-dashoffset: 0;
+  animation-fill-mode: both;
+}
+.frame #check:checked ~ .btn.send {
+  animation-name: button;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-delay: 1.75s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+@keyframes button {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    background-color: #1abc9c;
+    width: 200px;
+    left: 100px;
+  }
+  50%, 60% {
+    width: 40px;
+    left: 180px;
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    color: transparent;
+    z-index: 2;
+  }
+}
+.frame #check:checked ~ .btn.reset {
+  z-index: 10;
+  color: #000;
+  animation-name: resetOpacity;
+  animation-duration: 1s;
+  animation-delay: 4s;
+  animation-fill-mode: both;
+}
+.frame .reset {
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.5s ease;
+}
+@keyframes resetOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
