@@ -18,7 +18,7 @@
 
 | Day 3 | Day 4 |
 | ----------- | ----------- |
-| ![Día 3](images/day3.png) | ![Día 4](images/day4.gif) |
+| ![Día 3](images/day3.gif) | ![Día 4](images/day4.gif) |
 | [DEMO](https://miguelhg2351.github.io/100-days-css/03) | <a href="https://miguelhg2351.github.io/100-days-css/04">DEMO</a> |
 | clip-path | scale |
 | Cubic bezier | <- |
@@ -36,7 +36,7 @@
 
 | Day 5 | Day 6 |
 | ----------- | ----------- |
-| ![Día 5](images/day5.png) | ![Día 6](images/day6.gif) |
+| ![Día 5](images/day5.png) | ![Día 6](images/day6.png) |
 | [DEMO](https://miguelhg2351.github.io/100-days-css/05) | <a href="https://miguelhg2351.github.io/100-days-css/06">DEMO</a> |
 | Pseudo elementos | <- |
 | Animaciones | <- |
@@ -71,7 +71,7 @@
 
 | Day 9 | Day 10 |
 | ----------- | ----------- |
-| ![Día 9](images/day9.png) | ![Día 10](images/day10.gif) |
+| ![Día 9](images/day9.gif) | ![Día 10](images/day10.gif) |
 | [DEMO](https://miguelhg2351.github.io/100-days-css/09) | <a href="https://miguelhg2351.github.io/100-days-css/10">DEMO</a> |
 | Animaciones | <- |
 | Pseudo elementos | <- |
@@ -87,7 +87,7 @@
 
 | Day 11 | Day 12 |
 | ----------- | ----------- |
-| ![Día 11](images/day11.png) | ![Día 12](images/day12.gif) |
+| ![Día 11](images/day11.gif) | ![Día 12](images/day12.gif) |
 | [DEMO](https://miguelhg2351.github.io/100-days-css/11) | <a href="https://miguelhg2351.github.io/100-days-css/12">DEMO</a> |
 | Animaciones | <- |
 | Pseudo elementos | <- |
@@ -106,7 +106,7 @@
 
 | Day 13 | Day 14 |
 | ----------- | ----------- |
-| ![Día 13](images/day13.png) | ![Día 14](images/day14.gif) |
+| ![Día 13](images/day13.gif) | ![Día 14](images/day14.gif) |
 | [DEMO](https://miguelhg2351.github.io/100-days-css/13) | <a href="https://miguelhg2351.github.io/100-days-css/14">DEMO</a> |
 | Animaciones | <- |
 | Pseudo elementos | <- |
