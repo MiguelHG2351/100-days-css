@@ -120,3 +120,66 @@
 - [Transform origin](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin)
 
 - [Transform](https://developer.mozilla.org/es/docs/Web/CSS/transform)
+
+------------
+
+| Day 15 | Day 16 |
+| ----------- | ----------- |
+| ![Día 15](images/day15.gif) | ![Día 16](images/day16.gif) |
+| [DEMO](https://miguelhg2351.github.io/100-days-css/15) | <a href="https://miguelhg2351.github.io/100-days-css/16">DEMO</a> |
+| Drag And Drop | empty |
+| gradient | empty |
+| Transform origin | empty |
+| empty | SVG |
+| empty | CSS y SVG |
+
+- [Drag And Drop](https://developer.mozilla.org/es/docs/DragDrop/Drag_and_Drop/drag_and_drop_archivo)
+
+- [SVG](https://developer.mozilla.org/es/docs/Web/SVG)
+
+- [CSS y SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS)
+
+- [gradiente](https://developer.mozilla.org/es/docs/Web/CSS/radial-gradient())
+
+- [Transform origin](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin)
+
+
+------------
+
+| Day 17 | Day 18 |
+| ----------- | ----------- |
+| ![Día 17](images/day17.png) | ![Día 18](images/day18.gif) |
+| [DEMO](https://miguelhg2351.github.io/100-days-css/17) | <a href="https://miguelhg2351.github.io/100-days-css/18">DEMO</a> |
+| gradient | empty |
+| empty | SVG |
+| empty | CSS y SVG |
+| animaciones | <- |
+
+
+- [SVG](https://developer.mozilla.org/es/docs/Web/SVG)
+
+- [CSS y SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS)
+
+- [gradiente](https://developer.mozilla.org/es/docs/Web/CSS/radial-gradient())
+
+- [Animaciones](https://developer.mozilla.org/es/docs/Web/CSS/animation)
+
+------------
+
+| Day 19 | Day 20 |
+| ----------- | ----------- |
+| ![Día 19](images/day19.gif) | ![Día 20](images/day20.gif) |
+| [DEMO](https://miguelhg2351.github.io/100-days-css/19) | <a href="https://miguelhg2351.github.io/100-days-css/20">DEMO</a> |
+| empty | SVG |
+| empty | CSS y SVG |
+| animaciones | <- |
+| pseudo elementos | <- |
+
+
+- [SVG](https://developer.mozilla.org/es/docs/Web/SVG)
+
+- [CSS y SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS)
+
+- [Animaciones](https://developer.mozilla.org/es/docs/Web/CSS/animation)
+
+- [Pseudo elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos)
