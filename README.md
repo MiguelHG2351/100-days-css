@@ -125,7 +125,7 @@
 
 | Day 15 | Day 16 |
 | ----------- | ----------- |
-| ![Día 15](images/day15.gif) | ![Día 16](images/day16.gif) |
+| ![Día 15](images/day15.png) | ![Día 16](images/day16.gif) |
 | [DEMO](https://miguelhg2351.github.io/100-days-css/15) | <a href="https://miguelhg2351.github.io/100-days-css/16">DEMO</a> |
 | Drag And Drop | empty |
 | gradient | empty |
