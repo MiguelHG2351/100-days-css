@@ -5,143 +5,83 @@
   margin: -200px 0 0 -200px;
   width: 400px;
   height: 400px;
-  background-color: #2c3e50;
+  background-color: #2c2e2e;
   box-sizing: border-box;
   overflow: hidden;
 }
-.frame .circle {
+.frame .pacman {
   position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: #354a5f;
-  top: 50%;
-  left: 50%;
-  margin-left: -100px;
-  margin-top: -100px;
-}
-.frame .icon {
-  width: 120px;
-  height: 70px;
-  position: absolute;
-  z-index: 5;
-  top: 50%;
-  left: 50%;
-  margin-left: -60px;
-  margin-top: -35px;
+  top: 150px;
+  left: 150px;
+  width: 100px;
+  height: 100px;
   fill: none;
-  stroke-width: 2px;
-  stroke: #ecf0f1;
-  stroke-linecap: round;
-  stroke-dasharray: 325 325;
+  stroke: #F4D146;
+  stroke-width: 50px;
+  stroke-linecap: butt;
+  z-index: 2;
+  animation-name: mouth;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  stroke-dasharray: 157;
   stroke-dashoffset: 0;
+  animation-iteration-count: infinite;
+  transition: stroke-dashoffset 0.3s ease-in-out;
 }
-.frame .icon.plane {
-  width: 120px;
-  height: 110px;
-  stroke-dashoffset: 326;
-}
-@keyframes flyn {
-  25% {
-    transform: scale(1.1);
+@keyframes mouth {
+  0%, 100% {
+    transform: rotate(0deg);
+    stroke-dashoffset: 0;
   }
   50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: translate3d(350px, -202px, 0);
+    stroke-dashoffset: 39.25;
+    transform: rotate(45deg);
   }
 }
-.frame .btn {
-  font-family: "Roboto";
+.frame .eyes {
   position: absolute;
-  top: 80%;
-  bottom: 20px;
-  left: 50%;
-  margin-left: -100px;
-  box-sizing: border-box;
-  background-color: #ecf0f1;
-  border-radius: 14px;
-  font-size: 18px;
-  font-weight: 500;
-  height: fit-content;
-  cursor: pointer;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
-  border: none;
-  color: #556472;
-  width: 200px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  transition: all ease-in-out 0.1s;
-}
-.frame .btn:hover {
-  background-color: #1abc9c;
-  color: #fff;
-}
-.frame #check:checked ~ .icon.mail {
-  stroke-dashoffset: 325;
-  transition: stroke-dashoffset ease-in-out 1000ms;
-}
-.frame #check:checked ~ .icon.plane {
-  transition: stroke-dashoffset 1s ease-in-out;
-  transition-delay: 1000ms;
-  animation-name: flyn;
-  animation-duration: 2s;
+  top: 165px;
+  left: 212px;
+  width: 12px;
+  height: 12px;
+  fill: #2C2E2E;
+  animation-name: eyes;
+  animation-duration: 0.7s;
   animation-timing-function: ease-in-out;
-  animation-delay: 2s;
-  stroke-dashoffset: 0;
-  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  z-index: 3;
 }
-.frame #check:checked ~ .btn.send {
-  animation-name: button;
-  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  animation-delay: 1.75s;
-  animation-duration: 2s;
-  animation-fill-mode: both;
+@keyframes eyes {
+  0%, 100% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(-12px);
+  }
 }
-@keyframes button {
+.frame .dots {
+  position: absolute;
+  top: 49%;
+  left: 44%;
+  width: 240px;
+  height: 18px;
+  stroke-width: 12px;
+  stroke: #F4D146;
+  stroke-dasharray: 0 50px;
+  stroke-dashoffset: 14;
+  stroke-linecap: round;
+  fill: none;
+  animation-name: points;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes points {
   0% {
-    transform: scale(1);
-  }
-  30% {
-    background-color: #1abc9c;
-    width: 200px;
-    left: 100px;
-  }
-  50%, 60% {
-    width: 40px;
-    left: 180px;
-    transform: scale(1);
-  }
-  70% {
-    transform: scale(1.1);
+    stroke-dashoffset: 14;
   }
   100% {
-    color: transparent;
-    z-index: 2;
-  }
-}
-.frame #check:checked ~ .btn.reset {
-  z-index: 10;
-  color: #000;
-  animation-name: resetOpacity;
-  animation-duration: 1s;
-  animation-delay: 4s;
-  animation-fill-mode: both;
-}
-.frame .reset {
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 0.5s ease;
-}
-@keyframes resetOpacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+    stroke-dashoffset: 64;
   }
 }
 

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "css": "sass ./21/style.scss",
-    "css-dev": "sass --watch ./21/style.scss"
+    "css-dev": "sass --watch ./21/style.scss ./21/style/style.css"
   },
   "keywords": [],
   "author": "",
